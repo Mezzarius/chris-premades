@@ -71,7 +71,7 @@ let incompatibleModules = [
     'gm-paranoia-taragnor',
     'heartbeat',
     'max-crit',
-    'mre-ars',
+    'mre-dnd5e',
     'multiattack-5e',
     'obsidian',
     'quick-rolls',

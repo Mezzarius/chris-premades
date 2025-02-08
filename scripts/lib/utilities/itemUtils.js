@@ -121,8 +121,8 @@ async function syntheticItem(itemData, actor) {
     return item;
 }
 async function enchantItem(item, effectData, {effects = [], items = [], concentrationItem, parentEntity, identifier, vae, interdependent, strictlyInterdependent}) {
-    genericUtils.setProperty(effectData, 'flags.ars.type', 'enchantment');
-    genericUtils.setProperty(effectData, 'flags.ars.enchantment', {
+    genericUtils.setProperty(effectData, 'flags.dnd5e.type', 'enchantment');
+    genericUtils.setProperty(effectData, 'flags.dnd5e.enchantment', {
         level: {
             min: null,
             max: null

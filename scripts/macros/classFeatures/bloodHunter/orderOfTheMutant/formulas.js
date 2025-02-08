@@ -63,7 +63,7 @@ async function use({workflow}) {
             ];
             negativeEffectData.changes = [
                 {
-                    key: 'flags.ars.flags.ars.initiativeDisadv',
+                    key: 'flags.dnd5e.flags.dnd5e.initiativeDisadv',
                     mode: 0,
                     value: 1,
                     priority: 20
@@ -291,7 +291,7 @@ async function use({workflow}) {
         case 'formulaPrecision':
             positiveEffectData.changes = [
                 {
-                    key: 'flags.ars.weaponCriticalThreshold',
+                    key: 'flags.dnd5e.weaponCriticalThreshold',
                     mode: 5,
                     value: 19,
                     priority: 20

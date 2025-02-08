@@ -11,7 +11,7 @@ async function early({workflow}) {
         y: 1680,
         fillColor: game.user.color,
         flags: {
-            ars: {
+            dnd5e: {
                 origin: workflow.item.uuid
             },
             walledtemplates: {
@@ -26,7 +26,7 @@ async function early({workflow}) {
     await workflow.actor.sheet.minimize();
     ui.notifications.info(genericUtils.translate('CHRISPREMADES.Macros.FireStorm.Place'));
     for (let i = 0; i < 10; i++) {
-        let template = new game.ars.canvas.AbilityTemplate(templateDoc);
+        let template = new game.dnd5e.canvas.AbilityTemplate(templateDoc);
         try {
             let [finalTemplate] = await template.drawPreview();
             templates.push(finalTemplate);
@@ -59,7 +59,7 @@ async function early({workflow}) {
             seconds: 1
         },
         flags: {
-            ars: {
+            dnd5e: {
                 dependents: templates.map(i => {return {uuid: i.uuid};})
             }
         }

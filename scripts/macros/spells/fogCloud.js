@@ -12,7 +12,7 @@ async function early({workflow}) {
         direction: 0,
         fillColor: game.user.color,
         flags: {
-            ars: {
+            dnd5e: {
                 origin: workflow.item.uuid
             },
             'midi-qol': {
@@ -79,7 +79,7 @@ async function early({workflow}) {
             seconds: 3600 * workflow.item.system.duration.value
         },
         flags: {
-            ars: {
+            dnd5e: {
                 dependents: [{uuid: template.uuid}]
             }
         }

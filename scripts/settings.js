@@ -260,37 +260,37 @@ export function registerSettings() {
             dead: 'icons/svg/skull.svg',
             bleeding: 'modules/chris-premades/images/wounded.svg',
             blinded: 'modules/chris-premades/images/blinded.svg',
-            burrowing: 'systems/ars/icons/svg/statuses/burrowing.svg',
+            burrowing: 'systems/dnd5e/icons/svg/statuses/burrowing.svg',
             charmed: 'modules/chris-premades/images/charmed.svg',
             concentrating: 'modules/chris-premades/images/concentrating.svg',
-            cursed: 'systems/ars/icons/svg/statuses/cursed.svg',
+            cursed: 'systems/dnd5e/icons/svg/statuses/cursed.svg',
             deafened: 'modules/chris-premades/images/deafened.svg',
-            diseased: 'systems/ars/icons/svg/statuses/diseased.svg',
+            diseased: 'systems/dnd5e/icons/svg/statuses/diseased.svg',
             dodging: 'modules/chris-premades/images/dodging.svg',
-            encumbered: 'systems/ars/icons/svg/statuses/encumbered.svg',
-            ethereal: 'systems/ars/icons/svg/statuses/ethereal.svg',
-            exceedingCarryingCapacity: 'systems/ars/icons/svg/statuses/exceeding-carrying-capacity.svg',
-            exhaustion: 'systems/ars/icons/svg/statuses/exhaustion.svg',
-            flying: 'systems/ars/icons/svg/statuses/flying.svg',
+            encumbered: 'systems/dnd5e/icons/svg/statuses/encumbered.svg',
+            ethereal: 'systems/dnd5e/icons/svg/statuses/ethereal.svg',
+            exceedingCarryingCapacity: 'systems/dnd5e/icons/svg/statuses/exceeding-carrying-capacity.svg',
+            exhaustion: 'systems/dnd5e/icons/svg/statuses/exhaustion.svg',
+            flying: 'systems/dnd5e/icons/svg/statuses/flying.svg',
             frightened: 'modules/chris-premades/images/frightened.svg',
             grappled: 'modules/chris-premades/images/grappled.svg',
-            heavilyEncumbered: 'systems/ars/icons/svg/statuses/heavily-encumbered.svg',
-            hiding: 'systems/ars/icons/svg/statuses/hiding.svg',
-            hovering: 'systems/ars/icons/svg/statuses/hovering.svg',
+            heavilyEncumbered: 'systems/dnd5e/icons/svg/statuses/heavily-encumbered.svg',
+            hiding: 'systems/dnd5e/icons/svg/statuses/hiding.svg',
+            hovering: 'systems/dnd5e/icons/svg/statuses/hovering.svg',
             incapacitated: 'modules/chris-premades/images/incapacitated.svg',
             invisible: 'modules/chris-premades/images/invisible.svg',
-            marked: 'systems/ars/icons/svg/statuses/marked.svg',
+            marked: 'systems/dnd5e/icons/svg/statuses/marked.svg',
             paralyzed: 'modules/chris-premades/images/paralyzed.svg',
             petrified: 'modules/chris-premades/images/petrified.svg',
             poisoned: 'modules/chris-premades/images/poisoned.svg',
             prone: 'modules/chris-premades/images/prone.svg',
             restrained: 'modules/chris-premades/images/restrained.svg',
-            silenced: 'systems/ars/icons/svg/statuses/silenced.svg',
-            sleeping: 'systems/ars/icons/svg/statuses/sleeping.svg',
-            stable: 'systems/ars/icons/svg/statuses/stable.svg',
+            silenced: 'systems/dnd5e/icons/svg/statuses/silenced.svg',
+            sleeping: 'systems/dnd5e/icons/svg/statuses/sleeping.svg',
+            stable: 'systems/dnd5e/icons/svg/statuses/stable.svg',
             stunned: 'modules/chris-premades/images/stunned.svg',
-            surprised: 'systems/ars/icons/svg/statuses/surprised.svg',
-            transformed: 'systems/ars/icons/svg/statuses/transformed.svg',
+            surprised: 'systems/dnd5e/icons/svg/statuses/surprised.svg',
+            transformed: 'systems/dnd5e/icons/svg/statuses/transformed.svg',
             unconscious: 'icons/svg/unconscious.svg',
         },
         category: 'interface'
@@ -538,9 +538,9 @@ export function registerSettings() {
         category: 'mechanics',
         onChange: value => {
             if (value) {
-                Hooks.on('ars.rollInitiative', initiative.updateCompanionInitiative);
+                Hooks.on('dnd5e.rollInitiative', initiative.updateCompanionInitiative);
             } else {
-                Hooks.off('ars.rollInitiative', initiative.updateCompanionInitiative);
+                Hooks.off('dnd5e.rollInitiative', initiative.updateCompanionInitiative);
             }
         }
     });
@@ -551,9 +551,9 @@ export function registerSettings() {
         category: 'mechanics',
         onChange: value => {
             if (value) {
-                Hooks.on('ars.rollInitiative', initiative.updateSummonInitiative);
+                Hooks.on('dnd5e.rollInitiative', initiative.updateSummonInitiative);
             } else {
-                Hooks.off('ars.rollInitiative', initiative.updateSummonInitiative);
+                Hooks.off('dnd5e.rollInitiative', initiative.updateSummonInitiative);
             }
         }
     });
@@ -869,9 +869,9 @@ export function registerSettings() {
         category: 'interface',
         onChange: (value) => {
             if (value) {
-                Hooks.on('ars.getItemContextOptions', item.send);
+                Hooks.on('dnd5e.getItemContextOptions', item.send);
             } else {
-                Hooks.off('ars.getItemContextOptions', item.send);
+                Hooks.off('dnd5e.getItemContextOptions', item.send);
             }
         }
     });

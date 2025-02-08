@@ -110,7 +110,7 @@
       },
       "disabled": false,
       "flags": {
-        "ars": {},
+        "dnd5e": {},
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
@@ -149,7 +149,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "ars",
+        "systemId": "dnd5e",
         "systemVersion": "3.3.1",
         "createdTime": 1724255366946,
         "modifiedTime": 1724255379798,

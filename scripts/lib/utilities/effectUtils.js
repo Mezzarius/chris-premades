@@ -39,10 +39,10 @@ async function createEffect(entity, effectData, {concentrationItem, parentEntity
     if (concentrationEffect) genericUtils.setProperty(effectData, 'flags.chris-premades.concentrationEffectUuid', concentrationEffect.uuid);
     if (interdependent && (parentEntity || concentrationItem)) genericUtils.setProperty(effectData, 'flags.chris-premades.interdependent', true);
     if (strictlyInterdependent) {
-        let existingDependents = effectData.flags?.ars?.dependents ?? [];
+        let existingDependents = effectData.flags?.dnd5e?.dependents ?? [];
         if (parentEntity) existingDependents.push({uuid: parentEntity.uuid});
         if (concentrationEffect) existingDependents.push({uuid: concentrationEffect.uuid});
-        if (existingDependents.length) genericUtils.setProperty(effectData, 'flags.ars.dependents', existingDependents);
+        if (existingDependents.length) genericUtils.setProperty(effectData, 'flags.dnd5e.dependents', existingDependents);
     }
     if (vae) genericUtils.setProperty(effectData, 'flags.chris-premades.vae.buttons', vae);
     let effects;
@@ -70,10 +70,10 @@ async function createEffects(entity, effectDataArray, effectOptionsArray) {
         if (interdependent && (parentEntity || concentrationItem)) genericUtils.setProperty(effectData, 'flags.chris-premades.interdependent', true);
         if (vae) genericUtils.setProperty(effectData, 'flags.chris-premades.vae.buttons', vae);
         if (strictlyInterdependent) {
-            let existingDependents = effectData.flags?.ars?.dependents ?? [];
+            let existingDependents = effectData.flags?.dnd5e?.dependents ?? [];
             if (parentEntity) existingDependents.push({uuid: parentEntity.uuid});
             if (concentrationEffect) existingDependents.push({uuid: concentrationEffect.uuid});
-            if (existingDependents.length) genericUtils.setProperty(effectData, 'flags.ars.dependents', existingDependents);
+            if (existingDependents.length) genericUtils.setProperty(effectData, 'flags.dnd5e.dependents', existingDependents);
         }
         concentrationEffects.push(concentrationEffect);
     }

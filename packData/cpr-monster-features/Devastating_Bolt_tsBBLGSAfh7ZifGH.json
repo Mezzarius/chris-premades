@@ -158,7 +158,7 @@
       "effectCondition": ""
     },
     "core": {
-      "sheetClass": "ars.Tidy5eKgarItemSheet"
+      "sheetClass": "dnd5e.Tidy5eKgarItemSheet"
     },
     "chris-premades": {
       "info": {
