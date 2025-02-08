@@ -70,7 +70,7 @@ async function damage({trigger, workflow}) {
     if (!selection) return;
     let feature = await fromUuid(trigger.entity.origin);
     if (!feature) return;
-    await feature.displayCard({flags: {dnd5e: {use: {consumedUsage: true, consumeResource: true}}}});
+    await feature.displayCard({flags: {ars: {use: {consumedUsage: true, consumeResource: true}}}});
     if (combatUtils.inCombat()) await combatUtils.setTurnCheck(trigger.entity, 'giantsMight');
     let bonusDamage = trigger.entity.flags['chris-premades']?.giantsMight?.bonusDamage;
     if (!bonusDamage) return;

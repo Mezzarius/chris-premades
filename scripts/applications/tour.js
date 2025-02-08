@@ -36,13 +36,13 @@ let states = {
         if (!pack) return;
         let compendiumApp = Object.values(ui.windows).find(i => i.metadata?.id === pack.metadata.id);
         if (compendiumApp) compendiumApp.close();
-        let actor = await compendiumUtils.getItemFromCompendium('dnd5e.heroes', 'Akra (Dragonborn Cleric)');
+        let actor = await compendiumUtils.getItemFromCompendium('ars.heroes', 'Akra (Dragonborn Cleric)');
         if (!actor) return;
         await actor.sheet.render(true);
         await genericUtils.sleep(250);
     },
     8: async () => {
-        let actor = await compendiumUtils.getItemFromCompendium('dnd5e.heroes', 'Akra (Dragonborn Cleric)');
+        let actor = await compendiumUtils.getItemFromCompendium('ars.heroes', 'Akra (Dragonborn Cleric)');
         if (!actor) return;
         await actor.sheet.close();
         await ui.sidebar.expand();

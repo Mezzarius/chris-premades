@@ -144,7 +144,7 @@ async function earlySpell({workflow}) {
     let castLevel = workflow.item.flags['chris-premades'].ross.castLevel;
     if (!castLevel) return;
     workflow.castData.castLevel = castLevel;
-    if (workflow.chatCard) await genericUtils.setFlag(workflow.chatCard, 'dnd5e', 'use.spellLevel', castLevel);
+    if (workflow.chatCard) await genericUtils.setFlag(workflow.chatCard, 'ars', 'use.spellLevel', castLevel);
     let originItem = await fromUuid(workflow.item.flags['chris-premades'].ross.itemUuid);
     if (!originItem) return;
     let rossFlags = originItem.flags['chris-premades'].ross;

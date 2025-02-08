@@ -98,7 +98,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "disableCondition": "",
           "disableIncapacitated": false,
@@ -118,7 +118,7 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.dnd5e.tavernBrawlerFeat",
+          "key": "flags.ars.tavernBrawlerFeat",
           "mode": 5,
           "value": "1",
           "priority": 20
@@ -133,7 +133,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,

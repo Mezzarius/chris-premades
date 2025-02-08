@@ -128,7 +128,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "disableCondition": "",
           "disableIncapacitated": false,
@@ -148,7 +148,7 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.dnd5e.meleeCriticalDamageDice",
+          "key": "flags.ars.meleeCriticalDamageDice",
           "mode": 2,
           "value": "1",
           "priority": 20
@@ -163,7 +163,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": 1726174342037,
         "modifiedTime": 1726174355832,

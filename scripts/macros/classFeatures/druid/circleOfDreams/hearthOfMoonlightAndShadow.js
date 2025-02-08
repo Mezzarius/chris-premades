@@ -12,7 +12,7 @@ async function use({workflow}) {
             img: workflow.item.img,
             origin: workflow.item.uuid,
             flags: {
-                dnd5e: {
+                ars: {
                     dependents: [{uuid: workflow.template.uuid}]
                 },
                 dae: {

@@ -63,7 +63,7 @@
   "relationships": {
     "systems": [
       {
-        "id": "dnd5e",
+        "id": "ars",
         "type": "system",
         "compatibility": {
           "minimum": "3.3.1",

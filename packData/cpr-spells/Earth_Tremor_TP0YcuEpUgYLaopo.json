@@ -46,7 +46,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,
@@ -103,7 +103,7 @@
         "prone"
       ]
     },
-    "dnd5e": {}
+    "ars": {}
   },
   "system": {
     "description": {

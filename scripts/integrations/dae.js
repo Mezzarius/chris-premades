@@ -8,9 +8,9 @@ function renderItemSheet(app, [elem], options) {
     if (!headerButton) return;
     let object = app.object;
     if (!object) return;
-    let passiveEffect = !!object.effects.find(i => i.transfer && !i.flags.dnd5e?.type != 'enchantment');
-    let transferEffect = !!object.effects.find(i => !i.transfer && !i.flags.dnd5e?.type != 'enchantment');
-    let enchantmentEffect = !!object.effects.find(i => i.flags.dnd5e?.type === 'enchantment');
+    let passiveEffect = !!object.effects.find(i => i.transfer && !i.flags.ars?.type != 'enchantment');
+    let transferEffect = !!object.effects.find(i => !i.transfer && !i.flags.ars?.type != 'enchantment');
+    let enchantmentEffect = !!object.effects.find(i => i.flags.ars?.type === 'enchantment');
     let color;
     if (passiveEffect && !transferEffect && !enchantmentEffect) {
         color = 'dodgerblue';
