@@ -30,7 +30,7 @@ async function early({workflow}) {
             turns: 1
         },
         flags: {
-            ars: {
+            dnd5e: {
                 dependents: [{uuid: template.uuid}]
             }
         }

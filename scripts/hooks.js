@@ -60,15 +60,15 @@ export function registerHooks() {
     if (genericUtils.getCPRSetting('effectDescriptions') !== 'disabled') Hooks.on('preCreateActiveEffect', effects.preCreateActiveEffect);
     if (genericUtils.getCPRSetting('applyConditionChanges') || genericUtils.getCPRSetting('displayNestedConditions')) Hooks.on('preCreateActiveEffect', conditions.preCreateActiveEffect);
     if (genericUtils.getCPRSetting('vaeButtons')) Hooks.on('visual-active-effects.createEffectButtons', vae.createEffectButtons);
-    if (genericUtils.getCPRSetting('updateSummonInitiative')) Hooks.on('ars.rollInitiative', initiative.updateSummonInitiative);
-    if (genericUtils.getCPRSetting('updateCompanionInitiative')) Hooks.on('ars.rollInitiative', initiative.updateCompanionInitiative);
+    if (genericUtils.getCPRSetting('updateSummonInitiative')) Hooks.on('dnd5e.rollInitiative', initiative.updateSummonInitiative);
+    if (genericUtils.getCPRSetting('updateCompanionInitiative')) Hooks.on('dnd5e.rollInitiative', initiative.updateCompanionInitiative);
     Hooks.on('preUpdateToken', movementEvents.preUpdateToken);
     Hooks.on('preUpdateItem', equipment.addOrUpdate);
     Hooks.on('preDeleteItem', equipment.remove);
     Hooks.on('preCreateItem', equipment.addOrUpdate);
-    Hooks.on('ars.restCompleted', rest);
+    Hooks.on('dnd5e.restCompleted', rest);
     if (genericUtils.getCPRSetting('addActions')) Hooks.on('createToken', actions.createToken);
-    if (genericUtils.getCPRSetting('itemContext')) Hooks.on('ars.getItemContextOptions', item.send);
+    if (genericUtils.getCPRSetting('itemContext')) Hooks.on('dnd5e.getItemContextOptions', item.send);
     if (game.user.isGM) {
         Hooks.on('updateCombat', combatEvents.updateCombat);
         Hooks.on('combatStart', combatEvents.combatStart);

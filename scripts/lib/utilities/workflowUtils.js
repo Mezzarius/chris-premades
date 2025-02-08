@@ -177,7 +177,7 @@ async function handleInstantTemplate(workflow) {
             img: workflow.item.img,
             origin: workflow.item.uuid,
             flags: {
-                ars: {
+                dnd5e: {
                     dependents: [{uuid: workflow.template.uuid}]
                 }
             }

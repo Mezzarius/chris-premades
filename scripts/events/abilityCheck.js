@@ -188,13 +188,13 @@ async function rollCheck(wrapped, checkId, options = {}) {
     let messageData;
     let messageDataFunc = (actor, rollData, checkIdInternal) => {
         if (actor.uuid !== this.uuid || checkIdInternal !== checkId) {
-            Hooks.once('ars.preRollAbilityTest', messageDataFunc);
+            Hooks.once('dnd5e.preRollAbilityTest', messageDataFunc);
             return;
         }
         messageData = rollData.messageData;
         if (overtimeActorUuid) messageData['flags.midi-qol.overtimeActorUuid'] = overtimeActorUuid;
     };
-    Hooks.once('ars.preRollAbilityTest', messageDataFunc);
+    Hooks.once('dnd5e.preRollAbilityTest', messageDataFunc);
     let returnData = await wrapped(checkId, {...options, chatMessage: false});
     if (!returnData) return;
     let oldOptions = returnData.options;

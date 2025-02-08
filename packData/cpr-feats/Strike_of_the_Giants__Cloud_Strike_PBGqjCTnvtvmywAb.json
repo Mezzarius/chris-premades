@@ -147,7 +147,7 @@
       },
       "disabled": false,
       "flags": {
-        "ars": {},
+        "dnd5e": {},
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
@@ -190,7 +190,7 @@
         "compendiumSource": "Compendium.world.cpr-feat-features.Item.LcFJIDWQOKce2DtK.ActiveEffect.0yEy5J7QBEMNt199",
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "ars",
+        "systemId": "dnd5e",
         "systemVersion": "3.3.1",
         "createdTime": 1726606536141,
         "modifiedTime": 1726606536141,

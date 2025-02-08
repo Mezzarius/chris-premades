@@ -358,8 +358,8 @@ export class Medkit extends HandlebarsApplicationMixin(ApplicationV2) {
             sourceItemData.system.uses = itemData.system.uses;
             sourceItemData.system.uses.prompt = realPrompt;
         }
-        let advancementOrigin = itemData.flags.ars?.advancementOrigin;
-        if (advancementOrigin) genericUtils.setProperty(sourceItemData, 'flags.ars.advancementOrigin', advancementOrigin);
+        let advancementOrigin = itemData.flags.dnd5e?.advancementOrigin;
+        if (advancementOrigin) genericUtils.setProperty(sourceItemData, 'flags.dnd5e.advancementOrigin', advancementOrigin);
         let onUseFlag = genericUtils.getProperty(sourceItemData, 'flags.midi-qol.onUseMacroName');
         if (!onUseFlag) genericUtils.setProperty(sourceItemData, 'flags.miid-qol.-=onUseMacroName', null);
         if (itemType === 'spell') sourceItemData.system.preparation = itemData.system.preparation;

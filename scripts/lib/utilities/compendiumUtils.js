@@ -223,7 +223,7 @@ async function getFilteredActorDocumentsFromCompendium(key, {maxCR, actorTypes, 
         (!creatureSubtypes?.length || creatureSubtypes.includes(i.system?.details?.type?.subtype?.toLowerCase())) &&
         (!specificNames?.length || specificNames.includes(i.name))
     );
-    filteredIndex = game.ars.moduleArt.apply(filteredIndex);
+    filteredIndex = game.dnd5e.moduleArt.apply(filteredIndex);
     filteredIndex = filteredIndex.map(i => foundry.utils.mergeObject(i, {img: 'icons/svg/mystery-man.svg'}, {overwrite: !i.img}));
     return filteredIndex;
 }
@@ -236,8 +236,8 @@ async function getFilteredItemDocumentsFromCompendium(key, {specificNames, types
         (!actionTypes?.length || actionTypes.includes(i.system?.actionType)) &&
         (!badProperties?.length || badProperties.every(j => !i.system?.properties.includes(j)))
     );
-    filteredIndex = game.ars.moduleArt.apply(filteredIndex);
-    filteredIndex = filteredIndex.map(i => foundry.utils.mergeObject(i, {img: 'systems/ars/icons/svg/items/weapon.svg'}, {overwrite: !i.img}));
+    filteredIndex = game.dnd5e.moduleArt.apply(filteredIndex);
+    filteredIndex = filteredIndex.map(i => foundry.utils.mergeObject(i, {img: 'systems/dnd5e/icons/svg/items/weapon.svg'}, {overwrite: !i.img}));
     return filteredIndex;
 }
 async function getAppliedOrPreferredAutomation(item, options) { // need to finish this - autumn

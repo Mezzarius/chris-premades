@@ -205,8 +205,8 @@ form .cpr-row-center .cpr-input-short {
 }
 
 .cpr-medkit-tabs {
-    border-bottom: var(--ars-border-groove);
-    border-top: var(--ars-border-groove);
+    border-bottom: var(--dnd5e-border-groove);
+    border-top: var(--dnd5e-border-groove);
     padding: 2%;
     margin: 1%;
     margin-bottom: 10px;
@@ -414,11 +414,11 @@ form .cpr-row-center .cpr-input-short {
 }
 
 .theme-light .cpr-medkit-tabs .item{
-    color: var(--ars-color-olive) !important;
+    color: var(--dnd5e-color-olive) !important;
 }
 
 .theme-light .cpr-medkit-tabs .item.active{
-    color: var(--ars-color-tan) !important;
+    color: var(--dnd5e-color-tan) !important;
 }
 
 .theme-dark .cpr-medkit-tabs .item {
@@ -430,7 +430,7 @@ form .cpr-row-center .cpr-input-short {
 }
 
 .theme-light .cpr-medkit-tab div input:placeholder-shown {
-    --input-placeholder-color: var(--ars-color-olive);
+    --input-placeholder-color: var(--dnd5e-color-olive);
 }
 
 .theme-dark .cpr-medkit-tab div input:placeholder-shown {

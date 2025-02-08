@@ -147,7 +147,7 @@
         }
       }
     },
-    "ars": {}
+    "dnd5e": {}
   },
   "effects": [
     {
@@ -194,7 +194,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "ars",
+        "systemId": "dnd5e",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,

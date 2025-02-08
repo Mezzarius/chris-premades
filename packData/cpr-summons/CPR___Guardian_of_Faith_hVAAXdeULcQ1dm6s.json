@@ -578,7 +578,7 @@
       "wall-height": {
         "tokenHeight": 0.001
       },
-      "ars": {}
+      "dnd5e": {}
     },
     "randomImg": false,
     "appendNumber": false,
@@ -609,7 +609,7 @@
     "core": {
       "sourceId": "Actor.KfPd6FnBWgaW72P8"
     },
-    "ars": {
+    "dnd5e": {
       "showTokenPortrait": false
     }
   },
