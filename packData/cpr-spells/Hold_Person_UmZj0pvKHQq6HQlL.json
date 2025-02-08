@@ -17,7 +17,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "disableIncapacitated": false,
           "stackable": "noneName",
@@ -62,7 +62,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,
@@ -124,7 +124,7 @@
         }
       }
     },
-    "dnd5e": {}
+    "ars": {}
   },
   "system": {
     "description": {

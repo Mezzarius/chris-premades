@@ -57,7 +57,7 @@ async function endTurn({trigger: {entity: template, castData, token}}) {
     await workflowUtils.syntheticItemDataRoll(featureData, sourceActor, [token]);
 }
 async function enter({trigger: {entity: template, token}}) {
-    let originItem = await fromUuid(template.flags.dnd5e?.origin);
+    let originItem = await fromUuid(template.flags.ars?.origin);
     let effectData = {
         name: originItem?.name ?? templateUtils.getName(template),
         img: originItem?.img ?? 'icons/magic/water/barrier-ice-shield.webp',

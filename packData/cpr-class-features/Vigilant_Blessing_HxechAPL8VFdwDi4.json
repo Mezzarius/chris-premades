@@ -143,7 +143,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
@@ -185,7 +185,7 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.dnd5e.initiativeAdv",
+          "key": "flags.ars.initiativeAdv",
           "mode": 0,
           "value": "1",
           "priority": 20
@@ -200,7 +200,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": 1724857678107,
         "modifiedTime": 1725094621663,

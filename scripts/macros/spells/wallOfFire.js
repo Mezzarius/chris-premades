@@ -21,7 +21,7 @@ async function early({trigger, workflow}) {
             width: 0,
             fillColor: game.user.color,
             flags: {
-                dnd5e: {
+                ars: {
                     origin: workflow.item.uuid
                 }
             }
@@ -197,7 +197,7 @@ async function early({trigger, workflow}) {
             width: 10,
             fillColor: game.user.color,
             flags: {
-                dnd5e: {
+                ars: {
                     origin: workflow.item.uuid
                 }
             }

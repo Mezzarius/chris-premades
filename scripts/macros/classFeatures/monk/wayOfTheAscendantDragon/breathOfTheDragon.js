@@ -77,7 +77,7 @@ async function early({workflow}) {
         distance: target.value,
         fillColor: game.user.color,
         flags: {
-            dnd5e: {
+            ars: {
                 origin: workflow.item.uuid
             },
             'midi-qol': {

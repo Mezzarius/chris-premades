@@ -88,7 +88,7 @@ async function earlySpell({trigger, workflow}) {
     let castLevel = workflow.item.flags['chris-premades'].shieldGuardianSpellStoring.castLevel;
     if (!castLevel) return;
     workflow.castData.castLevel = castLevel;
-    if (workflow.chatCard) await genericUtils.setFlag(workflow.chatCard, 'dnd5e', 'use.spellLevel', castLevel);
+    if (workflow.chatCard) await genericUtils.setFlag(workflow.chatCard, 'ars', 'use.spellLevel', castLevel);
 }
 export let shieldGuardianSpellStoring = {
     name: 'Spell Storing',

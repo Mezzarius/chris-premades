@@ -148,7 +148,7 @@
         "identifier": "eldritchClawTattoo"
       }
     },
-    "dnd5e": {
+    "ars": {
       "dependents": [
         {
           "uuid": "Actor.FIdg2qF9mgynCpEX.ActiveEffect.d5jYxEnvVmZcikom"
@@ -264,7 +264,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,

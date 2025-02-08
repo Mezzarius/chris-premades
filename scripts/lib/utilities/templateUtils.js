@@ -127,7 +127,7 @@ async function setName(template, name) {
 }
 async function placeTemplate(templateData, returnTokens=false) {
     let templateDoc = new CONFIG.MeasuredTemplate.documentClass(templateData, {parent: canvas.scene});
-    let previewTemplate = new game.dnd5e.canvas.AbilityTemplate(templateDoc);
+    let previewTemplate = new game.ars.canvas.AbilityTemplate(templateDoc);
     let template = false;
     try {
         [template] = await previewTemplate.drawPreview();
@@ -175,7 +175,7 @@ function getIntersections(templateObj, A, B, boolOnly = false) {
     return intersections;
 }
 async function getSourceActor(template) {
-    return (await fromUuid(template.flags.dnd5e?.origin))?.parent;
+    return (await fromUuid(template.flags.ars?.origin))?.parent;
 }
 export let templateUtils = {
     getTokensInTemplate,

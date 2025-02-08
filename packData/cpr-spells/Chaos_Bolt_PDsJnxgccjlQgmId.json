@@ -116,7 +116,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {},
+    "ars": {},
     "midi-qol": {
       "removeAttackDamageButtons": "default",
       "fumbleThreshold": null,

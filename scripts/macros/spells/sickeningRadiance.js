@@ -41,7 +41,7 @@ async function startOrEnter({trigger: {entity: template, castData, token}}) {
     }
     let effect = effectUtils.getEffectByIdentifier(token.actor, 'sickeningRadiance');
     if (!effect) {
-        let originItem = await fromUuid(template.flags.dnd5e?.origin);
+        let originItem = await fromUuid(template.flags.ars?.origin);
         let effectData = {
             name: originItem?.name ?? templateUtils.getName(template),
             img: originItem.img ?? 'icons/magic/light/orb-beams-green.webp',

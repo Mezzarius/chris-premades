@@ -132,7 +132,7 @@
         }
       }
     },
-    "dnd5e": {
+    "ars": {
       "dependents": [
         {
           "uuid": "Scene.Z7zG6A8A7zbVdV9a.Token.FVhK8gq6hky4mk0g.Actor.zgNvjPBJYEoVDdgP.ActiveEffect.vjG18QSHA1fhCAke"
@@ -176,7 +176,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
@@ -227,7 +227,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,
@@ -249,7 +249,7 @@
       },
       "disabled": false,
       "flags": {
-        "dnd5e": {},
+        "ars": {},
         "dae": {
           "disableCondition": "",
           "disableIncapacitated": false,
@@ -296,7 +296,7 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "coreVersion": "12.331",
-        "systemId": "dnd5e",
+        "systemId": "ars",
         "systemVersion": "3.3.1",
         "createdTime": null,
         "modifiedTime": null,
